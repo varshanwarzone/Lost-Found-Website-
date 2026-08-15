@@ -1,69 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Report Lost Item</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<nav>
-    <div class="logo-title">
-        <img src="logo.png" alt="Logo" class="logo">
-        <h2>Lost & Found | University of Vavuniya</h2>
-    </div>
+    <nav>
+        <div class="logo-title">
+            <img src="logo.png" alt="University of Vavuniya Logo" class="logo">
 
-    <div>
-        <a href="index.html">Home</a>
-        <a href="report.html">Report Lost</a>
-        <a href="found.html">Found Items</a>
-        <a href="contact.html">Contact</a>
-    </div>
-</nav>
+            <h2>Lost &amp; Found | University of Vavuniya</h2>
+        </div>
 
-<h1 style="text-align:center; margin-top:30px;">
-    Report Lost Item 🔖
-</h1>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="report.html">Report Lost</a>
+            <a href="found.html">Found Items</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
 
-<div class="form-box">
+    <main>
 
-    <input
-        type="text"
-        id="itemName"
-        placeholder="Item Name"
-        required>
-    <br><br>
+        <h1 class="page-title">
+            Report Lost Item 🔖
+        </h1>
 
-    <input
-        type="text"
-        id="locationLost"
-        placeholder="Location Lost"
-        required>
-    <br><br>
+        <div class="form-box">
 
-    <input
-        type="tel"
-        id="contactPhone"
-        placeholder="Contact Number"
-        required>
-    <br><br>
+            <input
+                type="text"
+                id="itemName"
+                placeholder="Item Name"
+                required
+            >
 
-    <input
-        type="date"
-        id="dateLost">
-    <br><br>
+            <input
+                type="text"
+                id="locationLost"
+                placeholder="Location Lost"
+                required
+            >
 
-    <textarea
-        id="description"
-        placeholder="Description"
-        rows="5"></textarea>
-    <br><br>
+            <input
+                type="tel"
+                id="contactPhone"
+                placeholder="Contact Number"
+                required
+            >
 
-    <button onclick="saveItem()">Submit</button>
+            <input
+                type="date"
+                id="dateLost"
+            >
 
-</div>
+            <textarea
+                id="description"
+                placeholder="Description"
+                rows="5"
+            ></textarea>
 
-<script src="script.js"></script>
+            <button type="button" onclick="saveItem()">
+                Submit
+            </button>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
