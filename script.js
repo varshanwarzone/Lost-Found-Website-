@@ -1,12 +1,18 @@
-// Contact Page Function
+// ========================================
+// CONTACT PAGE FUNCTION
+// ========================================
+
 function sendMessage() {
 
     let name = document.getElementById("contactName").value;
+    let phone = document.getElementById("contactPhone").value;
     let email = document.getElementById("contactEmail").value;
     let message = document.getElementById("contactMessage").value;
 
+    // Check required fields
     if (
         name.trim() === "" ||
+        phone.trim() === "" ||
         email.trim() === "" ||
         message.trim() === ""
     ) {
@@ -14,15 +20,20 @@ function sendMessage() {
         return;
     }
 
-    alert("Message sent successfully!");
+    alert("Message sent successfully! 🎉");
 
+    // Clear form fields
     document.getElementById("contactName").value = "";
+    document.getElementById("contactPhone").value = "";
     document.getElementById("contactEmail").value = "";
     document.getElementById("contactMessage").value = "";
 }
 
 
-// Report Lost Item Function
+// ========================================
+// REPORT LOST ITEM FUNCTION
+// ========================================
+
 function saveItem() {
 
     let item = document.getElementById("itemName").value;
@@ -31,6 +42,7 @@ function saveItem() {
     let date = document.getElementById("dateLost").value;
     let description = document.getElementById("description").value;
 
+    // Check required fields
     if (
         item.trim() === "" ||
         location.trim() === "" ||
