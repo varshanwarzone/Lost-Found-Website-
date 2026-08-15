@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <div class="logo-title">
+        <img src="logo.png" alt="Logo" class="logo">
+        <h2>Lost & Found | University of Vavuniya</h2>
+    </div>
+
+    <div>
+        <a href="index.html">Home</a>
+        <a href="report.html">Report Lost</a>
+        <a href="found.html">Found Items</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+<!-- TITLE -->
+<h1 style="text-align:center; margin-top:40px; color:#670047;">
+    Contact Us ☎️
+</h1>
+
+<!-- UNIVERSITY CONTACT DETAILS -->
+<div class="contact-info">
+    <strong>📍 Address:</strong> Pampaimadu, Vavuniya, Sri Lanka
+
+    <span>|</span>
+
+    <strong>🕒 Hours:</strong> Mon-Fri 9:00 AM - 3:30 PM
+
+    <span>|</span>
+
+    <strong>📞 Phone:</strong> +94 24 222 2265
+
+    <span>|</span>
+
+    <strong>📧 Email:</strong> registraroffice@vau.ac.lk
+</div>
+<!-- CONTACT FORM -->
+<div class="form-box">
+
+    <input type="text" id="contactName" placeholder="Your Name" required>
+
+    <input type="tel" id="contactPhone" placeholder="Contact Number (07xxxxxxxx)" required>
+
+    <input type="email" id="contactEmail" placeholder="Email" required>
+
+    <textarea id="contactMessage" placeholder="Your Message..." rows="5" required></textarea>
+
+    <button type="button" onclick="sendMessage()">
+        Send Message
+    </button>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p>Lost & Found System &copy; 2026 University of Vavuniya, Sri Lanka. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
